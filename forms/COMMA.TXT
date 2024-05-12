@@ -1,0 +1,6 @@
+> jar xf objectdb100rc2-fe.zip
+
+
+Yes, there is another way too. You could format your date as a String (in a format that the DB recognizes) and submit it as a String (e.g. '2004-01-20').
+
+Alin. 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" 
+     "http://www.wapforum.org/DTD/wml13.dtd"> 
+<wml> 
+ 
+  <card id="card1" title="DD REQUEST"> 
+<onevent type="onenterbackward">
+<refresh>
+	<setvar name="T1" value=""/>
+	<setvar name="T2" value=""/>
+	<setvar name="T3" value=""/>
+	<setvar name="T4" value=""/>
+	<setvar name="T5" value=""/>
+</refresh>
+</onevent>	
+
+<onevent type="onenterforward">
+<refresh>
+	<setvar name="T1" value=""/>
+	<setvar name="T2" value=""/>
+	<setvar name="T3" value=""/>
+	<setvar name="T4" value=""/>
+	<setvar name="T5" value=""/>
+
+</refresh>
+</onevent> 
+
+     
+    <do type="accept" label="DemandDraft">
+      <go href="http://localhost:8080/examples/jsp/forms/ddd.jsp">
+            <postfeild name="T1" value="$dname"/>
+            <postfeild name="T2" value="$damt"/> 
+            <postfeild name="T3" value="$ddate"/>
+            <postfeild name="T4" value="$dcity"/>
+            <postfeild name="T5" value="$dstate"/>
+       </go>
+    </do> 
+   <p align="center"> 
+        Beneficiary Name  <input type="text" name="dname" size="20"/><br/>
+        DD Amount <input type="text" name="damt" size="20"/><br/>
+        App date<input type="text" name="ddate" size="20"/><br/>
+        City<input type="text" name="dcity" size="20"/><br/>
+        State<input type="text" name="dstate" size="20"/><br/>
+
+   </p> 
+     
+    
+  </card> 
+   
+ 
+</wml> 
